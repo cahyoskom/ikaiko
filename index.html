@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Snack Box Ponorogo | IKAIKO Bakery & Foods</title>
+<meta name="description" content="Pesan snack box Ponorogo untuk rapat, seminar, pengajian, arisan, ulang tahun dan hajatan. Fresh homemade, bisa custom isi box, melayani seluruh Ponorogo." />
+<meta name="keywords" content="snack box ponorogo, pesan snack box ponorogo, bakery ponorogo, snack box rapat ponorogo, snack seminar ponorogo, snack pengajian ponorogo, catering snack ponorogo, bolen pisang ponorogo, toko roti ponorogo, snack box mangkujayan" />
+<meta name="theme-color" content="#C67C4E" />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="/" />
+<meta property="og:title" content="Snack Box Ponorogo | IKAIKO Bakery & Foods" />
+<meta property="og:description" content="Snack box homemade premium untuk acara Anda di Ponorogo. Respon WhatsApp <10 menit." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="id_ID" />
+<meta property="og:image" content="assets/hero-snackbox.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preload" as="image" href="assets/hero-snackbox.jpg" fetchpriority="high" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+
+<style>
+:root{
+  --bg:#FFFDF9; --fg:#222; --muted:#6b6257; --card:#fff;
+  --primary:#C67C4E; --primary-fg:#fff;
+  --secondary:#8B5E3C; --secondary-fg:#fff;
+  --accent:#F5E6D3; --accent-fg:#5b3b22;
+  --border:#ead9c4; --wa:#25D366; --wa-fg:#fff;
+  --destructive:#c0392b;
+  --shadow:0 10px 30px -12px rgba(139,94,60,.18);
+  --radius:1rem;
+}
+*{box-sizing:border-box;margin:0;padding:0;border-color:var(--border)}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--fg);font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;letter-spacing:-.02em;line-height:1.1;color:var(--secondary)}
+.txt-primary{color:var(--primary)}
+.container{width:100%;max-width:76rem;margin:0 auto;padding:0 1.25rem}
+.section{padding:4rem 0}
+@media(min-width:768px){.section{padding:6rem 0}}
+.accent-bg{background:#fbf1e2}
+
+/* Buttons */
+.btn-wa,.btn-outline{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-weight:700;padding:.95rem 1.5rem;border-radius:9999px;transition:transform .2s,filter .2s,box-shadow .2s,background .2s,color .2s;cursor:pointer;border:0;font-size:1rem;font-family:inherit}
+.btn-wa{background:var(--wa);color:var(--wa-fg);box-shadow:0 10px 24px -10px rgba(37,211,102,.6)}
+.btn-wa:hover{transform:translateY(-2px);filter:brightness(1.05);box-shadow:0 16px 32px -12px rgba(37,211,102,.6)}
+.btn-outline{background:transparent;color:var(--secondary);border:1.5px solid var(--secondary);font-weight:600;padding:.9rem 1.4rem}
+.btn-outline:hover{background:var(--secondary);color:var(--secondary-fg)}
+.btn-wa svg,.btn-outline svg{width:20px;height:20px;flex-shrink:0}
+
+.card{background:var(--card);border:1px solid var(--border);border-radius:1.25rem;box-shadow:var(--shadow)}
+
+/* Header */
+.header{position:sticky;top:0;z-index:40;background:rgba(255,253,249,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(234,217,196,.6)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:.75rem 0}
+.logo{display:flex;align-items:center;gap:.5rem;font-family:"Playfair Display",serif;font-weight:700;font-size:1.125rem;color:var(--secondary)}
+.logo .badge{display:grid;place-items:center;width:36px;height:36px;border-radius:.75rem;background:var(--primary);color:#fff;font-family:"Playfair Display";font-weight:700}
+.logo .accent{color:var(--primary)}
+.nav{display:none;gap:1.75rem;font-size:.9rem;font-weight:500;color:rgba(34,34,34,.8)}
+.nav a:hover{color:var(--primary)}
+.header .btn-wa{padding:.55rem 1rem;font-size:.875rem;display:none}
+@media(min-width:640px){.header .btn-wa{display:inline-flex}}
+@media(min-width:768px){.nav{display:flex}}
+
+/* Hero */
+.hero{position:relative;padding:2.5rem 0 6rem;background:linear-gradient(to bottom,rgba(245,230,211,.5),var(--bg) 60%)}
+@media(min-width:1024px){.hero{padding:4rem 0 6rem}}
+.hero-grid{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:1024px){.hero-grid{grid-template-columns:1fr 1fr;gap:3.5rem}}
+.pill{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:var(--accent-fg);padding:.375rem 1rem;border-radius:9999px;font-size:.75rem;font-weight:700;letter-spacing:.04em}
+.hero h1{margin-top:1.25rem;font-size:clamp(2.25rem,5vw,3.75rem);font-weight:800}
+.hero p.lead{margin-top:1.25rem;font-size:1.125rem;color:rgba(34,34,34,.75);max-width:560px}
+.hero ul{margin-top:1.5rem;display:grid;gap:.5rem;list-style:none}
+@media(min-width:640px){.hero ul{grid-template-columns:1fr 1fr}}
+.hero li{display:flex;align-items:center;gap:.5rem;color:rgba(34,34,34,.8);font-size:.95rem}
+.check{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--primary);color:#fff;font-size:11px;flex-shrink:0}
+.hero-cta{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.75rem}
+.trust-row{margin-top:1.75rem;display:flex;align-items:center;gap:1.25rem;color:var(--muted);font-size:.875rem}
+.avatars{display:flex}
+.avatars span{width:32px;height:32px;border-radius:50%;border:2px solid var(--bg);margin-left:-8px;background:linear-gradient(135deg,var(--primary),var(--secondary))}
+.avatars span:first-child{margin-left:0}
+.hero-img-wrap{position:relative}
+.hero-img-wrap::before{content:"";position:absolute;inset:-1rem;border-radius:2.5rem;background:linear-gradient(45deg,rgba(198,124,78,.15),var(--accent),transparent);filter:blur(40px);z-index:0}
+.hero-img-wrap .card{position:relative;overflow:hidden;border-radius:2rem}
+.hero-img-wrap img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.hero-badge{position:absolute;bottom:-1.25rem;left:1rem;background:#fff;border-radius:1rem;padding:.75rem 1rem;display:flex;align-items:center;gap:.75rem;box-shadow:var(--shadow);border:1px solid var(--border)}
+.hero-badge .ico{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--wa);color:#fff}
+.hero-badge .ico svg{width:20px;height:20px}
+.hero-badge .t{font-size:.875rem;font-weight:600;color:var(--secondary)}
+.hero-badge .s{font-size:.75rem;color:var(--muted)}
+
+/* Section heads */
+.h2{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700}
+.lead-sm{margin-top:.75rem;color:rgba(34,34,34,.7);max-width:42rem}
+
+/* Trust grid */
+.grid{display:grid;gap:1.25rem}
+.grid-3{grid-template-columns:1fr}
+@media(min-width:640px){.grid-3{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.grid-3{grid-template-columns:1fr 1fr 1fr}}
+.trust-card{padding:1.5rem;transition:transform .2s}
+.trust-card:hover{transform:translateY(-4px)}
+.trust-card .num{display:grid;place-items:center;width:44px;height:44px;border-radius:.75rem;background:var(--accent);color:var(--secondary);font-family:"Playfair Display";font-weight:700}
+.trust-card h3{margin-top:1rem;font-size:1.125rem;font-weight:600;font-family:inherit;color:var(--secondary)}
+.trust-card p{margin-top:.375rem;font-size:.875rem;color:rgba(34,34,34,.7)}
+
+/* CTA banner */
+.cta-banner{background:linear-gradient(to right,var(--primary),var(--secondary));color:#fff;border-radius:1.5rem;padding:1.75rem;display:flex;flex-direction:column;align-items:center;gap:1.25rem;text-align:center;box-shadow:var(--shadow)}
+.cta-banner p{font-size:1.125rem;font-weight:600}
+@media(min-width:768px){.cta-banner{flex-direction:row;justify-content:space-between;text-align:left;padding:2rem}}
+
+/* Products */
+.prod-head{display:flex;flex-direction:column;gap:1rem;justify-content:space-between}
+@media(min-width:768px){.prod-head{flex-direction:row;align-items:flex-end}}
+.prod-grid{margin-top:2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+@media(min-width:768px){.prod-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1024px){.prod-grid{grid-template-columns:repeat(4,1fr)}}
+.prod{overflow:hidden;display:block}
+.prod .ph{position:relative;aspect-ratio:1;overflow:hidden}
+.prod img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.prod:hover img{transform:scale(1.05)}
+.prod .tag{position:absolute;top:.75rem;left:.75rem;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;background:rgba(255,255,255,.92);color:var(--secondary);padding:.25rem .5rem;border-radius:9999px}
+.prod .meta{padding:1rem;display:flex;align-items:center;justify-content:space-between}
+.prod h3{font-family:inherit;font-size:1rem;font-weight:600;color:var(--secondary)}
+.prod .arrow{color:var(--primary);font-weight:600}
+
+/* Problem */
+.ps-grid{display:grid;gap:1.25rem;margin-top:2.5rem}
+@media(min-width:768px){.ps-grid{grid-template-columns:1fr 1fr}}
+.ps-card{padding:1.75rem;border-left:4px solid var(--destructive)}
+.ps-card.sol{border-left-color:var(--wa);background:linear-gradient(135deg,#fff,rgba(245,230,211,.3))}
+.ps-card h3{font-family:"Playfair Display";font-size:1.25rem;font-weight:700;color:var(--secondary)}
+.ps-card ul{margin-top:1rem;list-style:none;display:grid;gap:.75rem}
+.ps-card li{display:flex;gap:.75rem;color:rgba(34,34,34,.8)}
+.ps-card .x{color:var(--destructive);margin-top:2px;font-weight:700}
+.ps-card .v{color:var(--wa);margin-top:2px;font-weight:700}
+
+/* Events */
+.events-grid{margin-top:2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+@media(min-width:640px){.events-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:768px){.events-grid{grid-template-columns:repeat(5,1fr)}}
+.event{padding:1.25rem;text-align:center;font-weight:600;transition:background .2s,color .2s}
+.event:hover{background:var(--primary);color:#fff}
+
+/* Testimonials */
+.tst-grid{display:grid;gap:2rem;align-items:flex-start}
+@media(min-width:1024px){.tst-grid{grid-template-columns:1fr 2fr}}
+.rating{margin-top:1.5rem;display:inline-flex;align-items:center;gap:1rem;padding:1.25rem}
+.rating .big{font-family:"Playfair Display";font-size:2.25rem;font-weight:700;color:var(--primary)}
+.stars{color:#f5a623;font-size:1.125rem;letter-spacing:2px}
+.tst-cards{display:grid;gap:1.25rem}
+@media(min-width:640px){.tst-cards{grid-template-columns:1fr 1fr}}
+.tst{padding:1.5rem}
+.tst blockquote{margin-top:.75rem;font-style:italic;color:rgba(34,34,34,.85)}
+.tst figcaption{margin-top:1rem;font-size:.875rem;color:var(--muted)}
+
+/* Process */
+.steps{margin-top:3rem;display:grid;gap:1.25rem;list-style:none}
+@media(min-width:768px){.steps{grid-template-columns:repeat(5,1fr)}}
+.step{padding:1.5rem}
+.step .n{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--primary);color:#fff;font-weight:700}
+.step h3{margin-top:1rem;font-family:inherit;font-weight:600;color:var(--secondary)}
+.step p{margin-top:.375rem;font-size:.875rem;color:rgba(34,34,34,.7)}
+
+/* FAQ */
+.faq-grid{display:grid;gap:2.5rem}
+@media(min-width:1024px){.faq-grid{grid-template-columns:1fr 1.5fr}}
+.faq-list{display:grid;gap:.75rem}
+.faq-item{overflow:hidden}
+.faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.25rem;font-weight:600;color:var(--secondary)}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary .plus{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--accent);color:var(--secondary);transition:transform .25s;flex-shrink:0;font-weight:700}
+.faq-item[open] summary .plus{transform:rotate(45deg)}
+.faq-item .ans{padding:0 1.25rem 1.25rem;color:rgba(34,34,34,.75)}
+
+/* Location */
+.loc-grid{display:grid;gap:2rem}
+@media(min-width:1024px){.loc-grid{grid-template-columns:1fr 1fr}}
+.loc-card{padding:1.75rem;display:flex;flex-direction:column;justify-content:center}
+.loc-card .row{margin-top:.75rem}
+.loc-card .lbl{font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.loc-card .val{font-weight:600}
+.loc-map{overflow:hidden;min-height:320px}
+.loc-map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+
+/* Final CTA */
+.final{padding:5rem 0 6rem;background:linear-gradient(135deg,var(--secondary),var(--secondary) 50%,var(--primary));color:#fff;text-align:center}
+.final h2{color:#fff;font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.15}
+.final p{margin-top:1.25rem;font-size:1.125rem;opacity:.9;max-width:42rem;margin-left:auto;margin-right:auto}
+.final .btn-wa{margin-top:2rem;padding:1rem 1.75rem;font-size:1rem}
+.final small{display:block;margin-top:1rem;opacity:.75;font-size:.875rem}
+
+/* Footer */
+footer{background:#1d1714;color:rgba(255,255,255,.8);padding:2.5rem 0}
+.foot{display:grid;gap:1.5rem;font-size:.875rem}
+@media(min-width:768px){.foot{grid-template-columns:repeat(3,1fr)}}
+.foot .ttl{color:#fff;font-weight:600;font-family:"Playfair Display";font-size:1.125rem}
+.foot .ttl-sm{color:#fff;font-weight:600}
+.foot p{margin-top:.5rem;opacity:.8}
+.copy{margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.15);font-size:.75rem;opacity:.7}
+
+/* Sticky WA */
+.sticky-wa-mobile{position:fixed;bottom:0;left:0;right:0;z-index:50;padding:.75rem;background:rgba(255,253,249,.95);backdrop-filter:blur(10px);border-top:1px solid var(--border)}
+.sticky-wa-mobile .btn-wa{width:100%}
+.float-wa{display:none;position:fixed;bottom:1.5rem;right:1.5rem;z-index:50;width:56px;height:56px;align-items:center;justify-content:center;border-radius:50%;background:var(--wa);color:#fff;box-shadow:0 10px 30px -8px rgba(37,211,102,.6);transition:transform .2s}
+.float-wa:hover{transform:scale(1.1)}
+.float-wa svg{width:28px;height:28px}
+@media(min-width:768px){.sticky-wa-mobile{display:none}.float-wa{display:flex}main{padding-bottom:0!important}}
+main{padding-bottom:5rem}
+</style>
+</head>
+<body>
+
+<a id="top"></a>
+<header class="header">
+  <div class="container header-inner">
+    <a href="#top" class="logo"><span class="badge">i</span>IKAIKO <span class="accent">&nbsp;Bakery</span></a>
+    <nav class="nav">
+      <a href="#produk">Produk</a><a href="#acara">Acara</a><a href="#cara">Cara Pesan</a><a href="#faq">FAQ</a><a href="#lokasi">Lokasi</a>
+    </nav>
+    <a href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener" class="btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>Chat WA</a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="pill">★ Rating 5.0 · Homemade Ponorogo</span>
+      <h1>Snack Box Ponorogo <span class="txt-primary">untuk Rapat, Seminar</span> & Hajatan</h1>
+      <p class="lead">Pesan snack box homemade dengan rasa premium, tampilan menarik, dan pengiriman tepat waktu untuk berbagai acara di Ponorogo.</p>
+      <ul>
+        <li><span class="check">✓</span>Fresh dibuat harian</li>
+        <li><span class="check">✓</span>Bisa custom isi snack box</li>
+        <li><span class="check">✓</span>Cocok untuk acara kecil & besar</li>
+        <li><span class="check">✓</span>Melayani seluruh Ponorogo</li>
+      </ul>
+      <div class="hero-cta">
+        <a href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener" class="btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>Pesan via WhatsApp</a>
+        <a href="#produk" class="btn-outline">Lihat Paket Snack Box</a>
+      </div>
+      <div class="trust-row">
+        <div class="avatars"><span></span><span></span><span></span><span></span></div>
+        <span>Dipercaya instansi, kantor, sekolah & panitia acara di Ponorogo</span>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <div class="card"><img src="assets/hero-snackbox.jpg" alt="Snack box premium homemade IKAIKO Bakery Ponorogo" width="1600" height="1200" fetchpriority="high" decoding="async" /></div>
+      <div class="hero-badge">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg></span>
+        <div><div class="t">Respon &lt; 10 menit</div><div class="s">Konsultasi gratis via WA</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="section">
+  <div class="container">
+    <div style="max-width:42rem">
+      <h2 class="h2">Mengapa Banyak Pelanggan Memilih <span class="txt-primary">IKAIKO Bakery & Foods?</span></h2>
+      <p class="lead-sm">Kami menggabungkan rasa rumahan, presentasi premium, dan layanan yang membuat panitia tenang.</p>
+    </div>
+    <div class="grid grid-3" style="margin-top:2.5rem">
+      <div class="card trust-card"><div class="num">01</div><h3>Fresh Setiap Hari</h3><p>Diolah pagi-pagi, sampai tujuan masih hangat & wangi.</p></div>
+      <div class="card trust-card"><div class="num">02</div><h3>Custom Sesuai Budget</h3><p>Mulai dari paket hemat hingga premium, sesuai anggaran.</p></div>
+      <div class="card trust-card"><div class="num">03</div><h3>Pelayanan Ramah</h3><p>Tim responsif siap bantu pilihkan menu terbaik.</p></div>
+      <div class="card trust-card"><div class="num">04</div><h3>Tepat Waktu</h3><p>Pengiriman sesuai jam acara — tanpa drama.</p></div>
+      <div class="card trust-card"><div class="num">05</div><h3>Disukai Semua Usia</h3><p>Rasa familiar yang aman untuk tamu lintas generasi.</p></div>
+      <div class="card trust-card"><div class="num">06</div><h3>Rating Pelanggan 5.0</h3><p>Ulasan jujur dari pelanggan Google Maps.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="container">
+  <div class="cta-banner">
+    <p>Konsultasi paket terbaik untuk acara Anda — gratis tanpa biaya</p>
+    <a href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener" class="btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>Chat WhatsApp</a>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section id="produk" class="section accent-bg">
+  <div class="container">
+    <div class="prod-head">
+      <div style="max-width:36rem"><h2 class="h2">Pilihan Snack <span class="txt-primary">Favorit Pelanggan</span></h2><p class="lead-sm">Semua produk fresh homemade. Bisa dipadukan dalam satu box sesuai kebutuhan acara Anda.</p></div>
+      <a href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener" class="btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>Minta Pricelist</a>
+    </div>
+    <div class="prod-grid">
+      <a class="card prod" href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener"><div class="ph"><img src="assets/p-bolen.jpg" alt="Bolen Pisang" loading="lazy" decoding="async" /><span class="tag">Best Seller</span></div><div class="meta"><h3>Bolen Pisang</h3><span class="arrow">→</span></div></a>
+      <a class="card prod" href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener"><div class="ph"><img src="assets/p-roti.jpg" alt="Roti Homemade" loading="lazy" decoding="async" /><span class="tag">Fresh</span></div><div class="meta"><h3>Roti Homemade</h3><span class="arrow">→</span></div></a>
+      <a class="card prod" href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener"><div class="ph"><img src="assets/p-kuebasah.jpg" alt="Kue Basah" loading="lazy" decoding="async" /><span class="tag">Tradisional</span></div><div class="meta"><h3>Kue Basah</h3><span class="arrow">→</span></div></a>
+      <a class="card prod" href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener"><div class="ph"><img src="assets/p-snackbox.jpg" alt="Snack Box Custom" loading="lazy" decoding="async" /><span class="tag">Custom</span></div><div class="meta"><h3>Snack Box Custom</h3><span class="arrow">→</span></div></a>
+      <a class="card prod" href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener"><div class="ph"><img src="assets/p-kantor.jpg" alt="Snack Acara Kantor" loading="lazy" decoding="async" /><span class="tag">Meeting</span></div><div class="meta"><h3>Snack Acara Kantor</h3><span class="arrow">→</span></div></a>
+      <a class="card prod" href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener"><div class="ph"><img src="assets/p-pengajian.jpg" alt="Snack Pengajian" loading="lazy" decoding="async" /><span class="tag">Berkah</span></div><div class="meta"><h3>Snack Pengajian</h3><span class="arrow">→</span></div></a>
+      <a class="card prod" href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener"><div class="ph"><img src="assets/p-seminar.jpg" alt="Snack Seminar" loading="lazy" decoding="async" /><span class="tag">Profesional</span></div><div class="meta"><h3>Snack Seminar</h3><span class="arrow">→</span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM/SOLUTION -->
+<section class="section">
+  <div class="container">
+    <div style="max-width:42rem"><h2 class="h2">Masih Bingung Memilih Snack <span class="txt-primary">untuk Acara?</span></h2><p class="lead-sm">Kami paham — keputusan snack acara itu pertaruhan reputasi panitia. Begini cara kami menjamin Anda tenang.</p></div>
+    <div class="ps-grid">
+      <div class="card ps-card">
+        <h3>Kekhawatiran Umum Panitia</h3>
+        <ul>
+          <li><span class="x">✗</span>Takut snack kurang enak & tamu kecewa</li>
+          <li><span class="x">✗</span>Takut pengiriman datang terlambat</li>
+          <li><span class="x">✗</span>Takut isi tidak sesuai pesanan</li>
+          <li><span class="x">✗</span>Takut tampilan box kurang pantas untuk acara</li>
+        </ul>
+      </div>
+      <div class="card ps-card sol">
+        <h3>Solusi IKAIKO Bakery</h3>
+        <ul>
+          <li><span class="v">✓</span>Resep homemade favorit, tested di ratusan acara Ponorogo</li>
+          <li><span class="v">✓</span>Estimasi waktu jelas, dikirim sebelum acara mulai</li>
+          <li><span class="v">✓</span>Konfirmasi isi box detail sebelum produksi</li>
+          <li><span class="v">✓</span>Packaging premium yang siap difoto & dipajang</li>
+        </ul>
+        <div style="margin-top:1.5rem"><a href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener" class="btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>Konsultasi Gratis</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section id="acara" class="section accent-bg">
+  <div class="container">
+    <div style="text-align:center;max-width:42rem;margin:0 auto"><h2 class="h2">Cocok untuk <span class="txt-primary">Berbagai Acara</span></h2><p class="lead-sm" style="margin-left:auto;margin-right:auto">Dari rapat kecil hingga hajatan besar — kami siapkan dengan standar yang sama.</p></div>
+    <div class="events-grid">
+      <div class="card event">Meeting Kantor</div><div class="card event">Seminar</div><div class="card event">Pelatihan</div><div class="card event">Pengajian</div><div class="card event">Arisan</div>
+      <div class="card event">Syukuran</div><div class="card event">Lamaran</div><div class="card event">Ulang Tahun</div><div class="card event">Wisuda</div><div class="card event">Acara Pemerintah</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="container">
+    <div class="tst-grid">
+      <div>
+        <h2 class="h2">Apa Kata <span class="txt-primary">Pelanggan</span></h2>
+        <p class="lead-sm">Rating sempurna di Google Maps dari pelanggan real Ponorogo.</p>
+        <div class="card rating"><div class="big">5.0</div><div><div class="stars">★★★★★</div><div style="font-size:.75rem;color:var(--muted)">Google Reviews</div></div></div>
+      </div>
+      <div class="tst-cards">
+        <figure class="card tst"><div class="stars">★★★★★</div><blockquote>"Pemilik ramah, pelayanannya baik, kuenya enak semua, tidak mengecewakan."</blockquote><figcaption>— Pelanggan Google</figcaption></figure>
+        <figure class="card tst"><div class="stars">★★★★★</div><blockquote>"Produknya enak."</blockquote><figcaption>— Pelanggan Google</figcaption></figure>
+      </div>
+    </div>
+    <div style="margin-top:2.5rem">
+      <div class="cta-banner"><p>Bergabung jadi pelanggan puas berikutnya — chat sekarang juga</p><a href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener" class="btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>Chat WhatsApp</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="cara" class="section accent-bg">
+  <div class="container">
+    <div style="text-align:center;max-width:42rem;margin:0 auto"><h2 class="h2">Cara <span class="txt-primary">Pemesanan</span></h2><p class="lead-sm" style="margin-left:auto;margin-right:auto">5 langkah simpel — selesai dalam hitungan menit lewat WhatsApp.</p></div>
+    <ol class="steps">
+      <li class="card step"><div class="n">1</div><h3>Hubungi WhatsApp</h3><p>Klik tombol & kirim detail acara Anda.</p></li>
+      <li class="card step"><div class="n">2</div><h3>Konsultasi Kebutuhan</h3><p>Tim bantu pilih menu sesuai jumlah & budget.</p></li>
+      <li class="card step"><div class="n">3</div><h3>Pilih Menu</h3><p>Custom isi box, kami kirim rincian harga.</p></li>
+      <li class="card step"><div class="n">4</div><h3>Konfirmasi Pesanan</h3><p>DP & jadwal diatur, produksi disiapkan.</p></li>
+      <li class="card step"><div class="n">5</div><h3>Pengiriman</h3><p>Sampai tepat waktu di lokasi acara.</p></li>
+    </ol>
+    <div style="margin-top:2.5rem;display:flex;justify-content:center"><a href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener" class="btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>Mulai Sekarang</a></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="faq-grid">
+      <div>
+        <h2 class="h2">Pertanyaan <span class="txt-primary">Sering Ditanya</span></h2>
+        <p class="lead-sm">Belum terjawab di sini? Tanyakan langsung lewat WhatsApp.</p>
+        <div style="margin-top:1.5rem"><a href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener" class="btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>Tanya Admin</a></div>
+      </div>
+      <div class="faq-list">
+        <details class="card faq-item" open><summary>Minimal order berapa box?<span class="plus">+</span></summary><div class="ans">Minimal order mulai dari 20 box untuk paket snack acara. Untuk jumlah lebih kecil bisa konsultasi langsung via WhatsApp.</div></details>
+        <details class="card faq-item"><summary>Apakah isi snack box bisa di-custom?<span class="plus">+</span></summary><div class="ans">Tentu. Anda bebas memilih kombinasi roti, kue basah, bolen pisang, dan snack lain sesuai budget & tema acara.</div></details>
+        <details class="card faq-item"><summary>Apakah bisa diantar ke lokasi acara?<span class="plus">+</span></summary><div class="ans">Bisa. Kami melayani pengiriman ke seluruh wilayah Kabupaten Ponorogo dan sekitarnya, tepat waktu sesuai jadwal acara.</div></details>
+        <details class="card faq-item"><summary>Berapa lama waktu pemesanan?<span class="plus">+</span></summary><div class="ans">Untuk hasil terbaik, pesan minimal H-1. Untuk acara besar (&gt;100 box), sebaiknya H-3 agar kami siapkan dengan optimal.</div></details>
+        <details class="card faq-item"><summary>Area layanan IKAIKO?<span class="plus">+</span></summary><div class="ans">Kami melayani seluruh Kabupaten Ponorogo dan kecamatan sekitarnya. Hubungi WA untuk konfirmasi area Anda.</div></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="lokasi" class="section accent-bg">
+  <div class="container">
+    <div class="loc-grid">
+      <div class="card loc-card">
+        <h2 class="h2">Kunjungi <span class="txt-primary">Dapur Kami</span></h2>
+        <div class="row"><div class="lbl">Alamat</div><div class="val">IKAIKO Bakery & Foods</div><div>Jl. Lombok No.19, Mangkujayan, Kec. Ponorogo, Kab. Ponorogo, Jawa Timur 63413</div></div>
+        <div class="row"><div class="lbl">WhatsApp</div><div class="val">0858-5343-0234</div></div>
+        <div class="row"><div class="lbl">Area Layanan</div><div>Seluruh Kabupaten Ponorogo & sekitarnya</div></div>
+        <div style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:.75rem">
+          <a href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener" class="btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>Chat WhatsApp</a>
+          <a href="https://www.google.com/maps/place/snack+Box+Ponorogo/" target="_blank" rel="noopener" class="btn-outline">Buka Google Maps</a>
+        </div>
+      </div>
+      <div class="card loc-map"><iframe title="Lokasi IKAIKO Bakery & Foods Ponorogo" src="https://www.google.com/maps?q=Jl.+Lombok+No.19,+Mangkujayan,+Ponorogo&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="container">
+    <h2>Siapkan Snack Terbaik untuk Acara Anda</h2>
+    <p>Konsultasikan kebutuhan acara dan dapatkan rekomendasi paket terbaik sesuai budget. Respon cepat, ramah, tanpa biaya konsultasi.</p>
+    <a href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener" class="btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>Chat WhatsApp Sekarang</a>
+    <small>Atau hubungi 0858-5343-0234</small>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot">
+      <div><div class="ttl">IKAIKO Bakery & Foods</div><p>Snack Box Ponorogo homemade premium untuk rapat, seminar, pengajian, dan hajatan.</p></div>
+      <div><div class="ttl-sm">Kontak</div><p>Jl. Lombok No.19, Mangkujayan, Ponorogo</p><p>WhatsApp: 0858-5343-0234</p></div>
+      <div><div class="ttl-sm">Layanan</div><p>Snack Box · Bolen Pisang · Roti Homemade · Kue Basah · Paket Acara</p></div>
+    </div>
+    <div class="copy">© <span id="yr"></span> IKAIKO Bakery & Foods. Semua hak dilindungi.</div>
+  </div>
+</footer>
+
+<!-- Sticky WA -->
+<div class="sticky-wa-mobile"><a href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener" class="btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>Pesan Snack Box via WhatsApp</a></div>
+<a class="float-wa" href="https://wa.me/6285853430234?text=Halo%20IKAIKO%20Bakery%20%26%20Foods%2C%20saya%20ingin%20mendapatkan%20informasi%20paket%20Snack%20Box%20Ponorogo." target="_blank" rel="noopener" aria-label="Chat WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg></a>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"LocalBusiness","@id":"https://ikaiko.bakery/#business","name":"IKAIKO Bakery & Foods","image":"assets/hero-snackbox.jpg","telephone":"+6285853430234","priceRange":"Rp","address":{"@type":"PostalAddress","streetAddress":"Jl. Lombok No.19, Mangkujayan","addressLocality":"Ponorogo","addressRegion":"Jawa Timur","postalCode":"63413","addressCountry":"ID"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"2"},"areaServed":"Kabupaten Ponorogo"},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Minimal order berapa box?","acceptedAnswer":{"@type":"Answer","text":"Minimal order mulai dari 20 box untuk paket snack acara."}},
+{"@type":"Question","name":"Apakah isi snack box bisa di-custom?","acceptedAnswer":{"@type":"Answer","text":"Tentu. Anda bebas memilih kombinasi roti, kue basah, bolen pisang, dan snack lain sesuai budget & tema acara."}},
+{"@type":"Question","name":"Apakah bisa diantar ke lokasi acara?","acceptedAnswer":{"@type":"Answer","text":"Bisa. Kami melayani pengiriman ke seluruh wilayah Kabupaten Ponorogo dan sekitarnya."}},
+{"@type":"Question","name":"Berapa lama waktu pemesanan?","acceptedAnswer":{"@type":"Answer","text":"Pesan minimal H-1. Untuk acara besar (>100 box), sebaiknya H-3."}},
+{"@type":"Question","name":"Area layanan IKAIKO?","acceptedAnswer":{"@type":"Answer","text":"Seluruh Kabupaten Ponorogo dan kecamatan sekitarnya."}}
+]}
+]}
+</script>
+</body>
+</html>
